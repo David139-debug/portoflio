@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
+import ScrollProgress from "@/components/ui/scroll-progress";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -21,9 +27,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ScrollProgress />
+        {children}
+      </body>
     </html>
   );
 }
