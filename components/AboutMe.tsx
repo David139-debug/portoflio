@@ -59,7 +59,6 @@ const AboutMe = () => {
                 </span>
               </div>
 
-              {/* Donji podaci */}
               <div className="absolute inset-x-6 bottom-6">
                 <div className="rounded-2xl border border-white/10 bg-black/35 p-5 backdrop-blur-md">
                   <p className="text-lg font-medium tracking-[-0.02em] text-zinc-100">
@@ -108,7 +107,6 @@ const AboutMe = () => {
               </div>
             </div>
 
-            {/* Principi rada */}
             <div className="mt-14 border-t border-white/10">
               {principles.map((principle) => (
                 <article

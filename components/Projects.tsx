@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
-import img from "@/public/hypermax-dashboard.png";
+import hyperMax from "@/public/hypermax-dashboard.png";
+import barber from "@/public/barber.png";
 
 type Project = {
   number: string;
@@ -10,13 +11,13 @@ type Project = {
   tags: string[];
   href: string;
   accent: string;
-  image?: StaticImageData;
+  image: StaticImageData;
   imageAlt?: string;
 };
 
 const projects: Project[] = [
   {
-    number: "01",
+    number: "1",
     title: "HyperMax Trading Platform",
     description:
       "A multi-account cryptocurrency trading platform for monitoring markets, managing risk and executing advanced orders from a single interface.",
@@ -24,31 +25,22 @@ const projects: Project[] = [
       "Centralized trading controls, real-time market visibility and streamlined multi-account management.",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
     href: "#",
-    image: img,
+    image: hyperMax,
     imageAlt:
       "HyperMax cryptocurrency trading dashboard with market chart and order controls",
     accent: "from-blue-500/25 via-indigo-500/10 to-transparent",
   },
   {
-    number: "02",
-    title: "Project Management Platform",
+    number: "2",
+    title: "Barbershop Website",
     description:
-      "A collaborative workspace for planning projects, assigning tasks and tracking progress across distributed teams.",
+      "A modern and responsive barbershop website designed to present services, showcase the brand and make it easy for customers to find key information and book an appointment.",
     result: "One centralized workflow for projects, tasks and communication.",
     tags: ["React", "Next.js", "Prisma", "PostgreSQL"],
     href: "#",
+    image: barber,
+    imageAlt: "Barber shop portfolio picture",
     accent: "from-violet-500/25 via-fuchsia-500/10 to-transparent",
-  },
-  {
-    number: "03",
-    title: "Subscription Management App",
-    description:
-      "A complete subscription platform with authentication, billing, role-based access and an administrative dashboard.",
-    result:
-      "A production-ready foundation for launching a subscription product.",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    href: "#",
-    accent: "from-cyan-500/25 via-blue-500/10 to-transparent",
   },
 ];
 
@@ -61,7 +53,6 @@ const Projects = () => {
       <div className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#080808] to-transparent" />
 
       <div className="relative mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-16">
-        {/* Zaglavlje sekcije */}
         <div className="grid gap-8 border-b border-white/10 pb-14 md:grid-cols-2 md:items-end">
           <div>
             <h2 className="max-w-xl text-4xl font-semibold leading-[1.05] tracking-[-0.04em] text-zinc-100 sm:text-5xl lg:text-6xl">
@@ -69,14 +60,8 @@ const Projects = () => {
               <span className="text-zinc-500">real problems.</span>
             </h2>
           </div>
-
-          <p className="max-w-xl text-base leading-7 text-zinc-400 sm:text-lg md:justify-self-end">
-            A selection of full-stack applications focused on usability,
-            maintainable architecture and measurable business value.
-          </p>
         </div>
 
-        {/* Projekti */}
         <div className="mt-16 space-y-8 lg:mt-20 lg:space-y-12">
           {projects.map((project) => (
             <article
@@ -112,10 +97,6 @@ const Projects = () => {
 
                 <div className="flex flex-col p-7 sm:p-10 lg:p-12">
                   <div className="flex items-start justify-between gap-6">
-                    <span className="font-mono text-xs text-zinc-600">
-                      / {project.number}
-                    </span>
-
                     <a
                       href={project.href}
                       aria-label={`View ${project.title} case study`}

@@ -29,7 +29,7 @@ const Hero = () => {
               href="#projects"
               className="inline-flex roboto h-12 items-center justify-center rounded-xl bg-zinc-100 px-6 text-sm font-medium text-zinc-950 transition duration-200 hover:-translate-y-0.5 hover:bg-white"
             >
-              View case studies
+              View my work
             </a>
 
             <a
