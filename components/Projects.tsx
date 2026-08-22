@@ -26,8 +26,8 @@ const projects: Project[] = [
       "A multi-account cryptocurrency trading platform for monitoring markets, managing risk and executing advanced orders from a single interface.",
     result:
       "Centralized trading controls, real-time market visibility and streamlined multi-account management.",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma"],
-    href: "#",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Electron"],
+    href: "https://hype-liquid-sniper.vercel.app/",
     image: hyperMax,
     imageAlt:
       "HyperMax cryptocurrency trading dashboard with market chart and order controls",
@@ -39,8 +39,8 @@ const projects: Project[] = [
     description:
       "A modern and responsive barbershop website designed to present services, showcase the brand and make it easy for customers to find key information and book an appointment.",
     result: "One centralized workflow for projects, tasks and communication.",
-    tags: ["React", "Next.js", "Prisma", "PostgreSQL"],
-    href: "#",
+    tags: ["Next.js", "Tailwind CSS", "Figma", "Framer Motion"],
+    href: "https://barberportfolio-eta.vercel.app/",
     image: barber,
     imageAlt: "Barber shop portfolio picture",
     accent: "from-violet-500/25 via-fuchsia-500/10 to-transparent",
@@ -187,6 +187,7 @@ const Projects = () => {
                     <a
                       href={project.href}
                       aria-label={`View ${project.title} case study`}
+                      target="_blank"
                       className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-zinc-400 transition-all duration-300 group-hover:border-blue-400/25 group-hover:bg-blue-400/[0.06] group-hover:text-blue-300 hover:!border-blue-400/50 hover:!bg-blue-400/10 hover:!text-blue-200"
                     >
                       <ArrowUpRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

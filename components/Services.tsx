@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
@@ -57,7 +60,37 @@ const Services = () => {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_30%,rgba(59,130,246,0.05),transparent_35%)]" />
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-16 px-6 sm:px-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24 lg:px-16">
-        <div className="lg:sticky lg:top-32 lg:self-start flex flex-col justify-center">
+        <motion.div
+          initial={{
+            clipPath: "inset(0 100% 100% 0)",
+            opacity: 0,
+            x: -20,
+            y: 20,
+            scale: 0.98,
+            filter: "blur(8px)",
+          }}
+          whileInView={{
+            clipPath: "inset(0 0% 0% 0)",
+            opacity: 1,
+            x: 0,
+            y: 0,
+            scale: 1,
+            filter: "blur(0px)",
+            transition: { delay: 0.7 },
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            duration: 1.3,
+            delay: 0.1,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          style={{
+            willChange: "clip-path, transform, opacity, filter",
+          }}
+          className="lg:sticky lg:top-32 lg:self-start flex flex-col justify-center"
+        >
           <h2 className="max-w-lg sans text-4xl font-semibold leading-[1.05] tracking-[-0.04em] text-zinc-100 sm:text-5xl lg:text-6xl">
             From idea to a{" "}
             <span className="text-zinc-500">reliable product.</span>
@@ -75,9 +108,9 @@ const Services = () => {
             Discuss your project
             <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
           </a>
-        </div>
+        </motion.div>
 
-        <div className="border-t border-white/10">
+        <div>
           {services.map((service) => (
             <article
               key={service.number}
@@ -98,23 +131,47 @@ const Services = () => {
 
                 <div>
                   <div className="flex items-start justify-between gap-6">
-                    <h3 className="max-w-lg sans text-2xl font-semibold tracking-[-0.035em] text-zinc-200 transition-colors duration-300 group-hover:text-white sm:text-3xl">
+                    <motion.h3
+                      initial={{ x: 10, opacity: 0 }}
+                      whileInView={{
+                        x: 0,
+                        opacity: 1,
+                        transition: { duration: 0.3, delay: 0.5 },
+                      }}
+                      viewport={{ once: true }}
+                      className="max-w-lg sans text-2xl font-semibold tracking-[-0.035em] text-zinc-200 transition-colors duration-300 group-hover:text-white sm:text-3xl"
+                    >
                       {service.title}
-                    </h3>
+                    </motion.h3>
                   </div>
 
-                  <p className="mt-5 max-w-2xl roboto text-base leading-7 text-zinc-500 transition-colors duration-300 group-hover:text-zinc-400">
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    whileInView={{
+                      opacity: 1,
+                      transition: { duration: 0.7, delay: 0.7 },
+                    }}
+                    viewport={{ once: true }}
+                    className="mt-5 max-w-2xl roboto text-base leading-7 text-zinc-500 transition-colors duration-300 group-hover:text-zinc-400"
+                  >
                     {service.description}
-                  </p>
+                  </motion.p>
 
                   <div className="mt-7 flex flex-wrap gap-2">
                     {service.deliverables.map((deliverable) => (
-                      <span
+                      <motion.span
+                        initial={{ opacity: 0, clipPath: "inset(0 100% 0 0)" }}
+                        whileInView={{
+                          opacity: 1,
+                          clipPath: "inset(0 0 0 0)",
+                          transition: { duration: 0.7, delay: 0.9 },
+                        }}
+                        viewport={{ once: true }}
                         key={deliverable}
                         className="rounded-full border roboto border-white/[0.07] bg-white/[0.025] px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.08em] text-zinc-600 transition-colors duration-300 group-hover:border-white/10 group-hover:text-zinc-500"
                       >
                         {deliverable}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
                 </div>
