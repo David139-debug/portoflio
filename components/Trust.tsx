@@ -40,11 +40,7 @@ const Trust = () => {
 
                 <div>
                   <p className="text-sm roboto font-medium text-zinc-200">
-                    Freelance client
-                  </p>
-
-                  <p className="mt-1 roboto text-[10px] uppercase tracking-[0.13em] text-zinc-600">
-                    Electron application
+                    Nabil
                   </p>
                 </div>
               </div>

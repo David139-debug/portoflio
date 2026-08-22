@@ -69,7 +69,7 @@ const Services = () => {
           </p>
 
           <a
-            href="#contact"
+            href="mailto:david.contact55@gmail.com"
             className="group mt-9 inline-flex items-center gap-2 text-sm font-medium text-zinc-300 transition-colors duration-300 hover:text-white"
           >
             Discuss your project
@@ -92,7 +92,6 @@ const Services = () => {
               />
 
               <div className="relative grid gap-6 transition-transform duration-500 ease-out group-hover:translate-x-2 sm:grid-cols-[70px_1fr] sm:gap-8">
-                {/* Broj */}
                 <span
                   className={`font-mono text-xs text-zinc-700 transition-colors duration-300 ${service.numberColor}`}
                 ></span>
@@ -102,10 +101,6 @@ const Services = () => {
                     <h3 className="max-w-lg sans text-2xl font-semibold tracking-[-0.035em] text-zinc-200 transition-colors duration-300 group-hover:text-white sm:text-3xl">
                       {service.title}
                     </h3>
-
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/10 text-zinc-600 transition-all duration-300 group-hover:border-white/20 group-hover:bg-white/[0.05] group-hover:text-zinc-200">
-                      <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
                   </div>
 
                   <p className="mt-5 max-w-2xl roboto text-base leading-7 text-zinc-500 transition-colors duration-300 group-hover:text-zinc-400">

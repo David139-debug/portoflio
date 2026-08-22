@@ -54,12 +54,12 @@ const AboutMe = () => {
               <div className="pointer-events-none absolute left-1/2 top-1/2 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-500/[0.06] blur-[90px] transition-all duration-700 group-hover:scale-125 group-hover:bg-blue-500/[0.1]" />
 
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="font-sans text-[10rem] font-semibold tracking-[-0.08em] text-white/[0.06] transition-all duration-700 group-hover:scale-105 group-hover:text-white/[0.09] sm:text-[13rem]">
+                <span className="pointer-events-none font-sans text-[10rem] font-semibold tracking-[-0.08em] text-white/[0.06] transition-all duration-700 group-hover:scale-105 group-hover:text-white/[0.09] sm:text-[13rem]">
                   D
                 </span>
               </div>
 
-              <div className="absolute inset-x-6 bottom-6">
+              <div className="absolute inset-x-6 bottom-6 sans">
                 <div className="rounded-2xl border border-white/10 bg-black/35 p-5 backdrop-blur-md">
                   <p className="text-lg font-medium tracking-[-0.02em] text-zinc-100">
                     David
@@ -78,7 +78,7 @@ const AboutMe = () => {
               </div>
             </div>
 
-            <p className="mt-4 font-mono text-[10px] uppercase tracking-[0.14em] text-zinc-700">
+            <p className="mt-4 roboto font-mono text-[10px] uppercase tracking-[0.14em] text-zinc-700">
               Full-stack · Product development
             </p>
           </div>
@@ -126,7 +126,6 @@ const AboutMe = () => {
               ))}
             </div>
 
-            {/* Tehnologije */}
             <div className="mt-12">
               <div className="mt-5 flex flex-wrap gap-2">
                 {technologies.map((technology) => (
