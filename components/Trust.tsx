@@ -247,7 +247,7 @@ const Trust = () => {
               </dl>
 
               <a
-                href="#contact"
+                href="mailto:david.contact55@gmail.com"
                 className="mt-12 roboto inline-flex items-center gap-2 text-sm font-medium text-zinc-400 transition-colors duration-300 hover:text-white"
               >
                 Work with me

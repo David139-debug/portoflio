@@ -265,7 +265,7 @@ const AboutMe = () => {
               className="mt-12 roboto flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center"
             >
               <a
-                href="#contact"
+                href="mailto:david.contact55@gmail.com"
                 className="group inline-flex h-12 items-center justify-center gap-2 rounded-xl bg-zinc-100 px-6 text-sm font-medium text-zinc-950 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_10px_35px_rgba(255,255,255,0.1)]"
               >
                 Let&apos;s work together
