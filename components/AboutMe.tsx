@@ -244,7 +244,7 @@ const AboutMe = () => {
                     initial={{ clipPath: "inset(0 100% 0 0)" }}
                     whileInView={{
                       clipPath: "inset(0 0 0 0)",
-                      transition: { duration: 0.6, delay: 1.9 },
+                      transition: { duration: 0.6, delay: 0.7 },
                     }}
                     viewport={{ once: true }}
                     className="rounded-full sans border border-white/[0.08] bg-white/[0.03] px-3.5 py-2 font-mono text-[11px] text-zinc-500 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/25 hover:bg-blue-400/[0.06] hover:text-blue-200"
@@ -259,7 +259,7 @@ const AboutMe = () => {
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
-                transition: { duration: 0.6, delay: 1.9 },
+                transition: { duration: 0.6, delay: 0.8 },
               }}
               viewport={{ once: true }}
               className="mt-12 roboto flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center"

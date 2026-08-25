@@ -37,8 +37,9 @@ const projects: Project[] = [
     number: "2",
     title: "Barbershop Website",
     description:
-      "A modern and responsive barbershop website designed to present services, showcase the brand and make it easy for customers to find key information and book an appointment.",
-    result: "One centralized workflow for projects, tasks and communication.",
+      "A polished online presence that makes services easier to discover and gives customers a clear path to booking.",
+    result:
+      "Clearer service presentation and a faster path from discovery to booking.",
     tags: ["Next.js", "Tailwind CSS", "Figma", "Framer Motion"],
     href: "https://barberportfolio-eta.vercel.app/",
     image: barber,
@@ -74,7 +75,7 @@ const cardReveal = {
     y: 0,
     transition: {
       duration: 0.3,
-      delay: 1,
+      delay: 0.5,
     },
   },
 };
@@ -158,7 +159,7 @@ const Projects = () => {
                       opacity: 1,
                       x: 0,
                       transition: {
-                        delay: 1.3,
+                        delay: 0.9,
                       },
                     }}
                     viewport={{ once: true }}
@@ -201,7 +202,7 @@ const Projects = () => {
                       opacity: 1,
                       transition: {
                         duration: 1,
-                        delay: 1.5,
+                        delay: 1,
                       },
                     }}
                     viewport={{ once: true }}
@@ -215,7 +216,7 @@ const Projects = () => {
                     whileInView={{
                       opacity: 1,
                       transition: {
-                        delay: 2,
+                        delay: 1.4,
                       },
                     }}
                     viewport={{ once: true }}
@@ -229,7 +230,7 @@ const Projects = () => {
                     whileInView={{
                       opacity: 1,
                       transition: {
-                        delay: 2.2,
+                        delay: 1.5,
                       },
                     }}
                     viewport={{ once: true }}
@@ -252,7 +253,7 @@ const Projects = () => {
                         whileInView={{
                           opacity: 1,
                           transition: {
-                            delay: 2.8,
+                            delay: 1.6,
                           },
                         }}
                         viewport={{ once: true }}
