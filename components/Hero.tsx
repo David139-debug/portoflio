@@ -159,7 +159,7 @@ const Hero = () => {
               whileTap={{
                 scale: 0.98,
               }}
-              href="mailto:tvojmail@gmail.com"
+              href="mailto:david.contact55@gmail.com"
               className="inline-flex roboto h-12 items-center justify-center rounded-xl border border-white/15 bg-white/[0.04] px-6 text-sm font-medium text-zinc-100 backdrop-blur-sm transition-colors duration-200 hover:border-white/25 hover:bg-white/[0.08]"
             >
               Tell me about your project
