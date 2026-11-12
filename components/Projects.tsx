@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import Image, { type StaticImageData } from "next/image";
 import hyperMax from "@/public/hypermax-dashboard.png";
 import barber from "@/public/barber.png";
+import aura from "@/public/aura.png";
 import { motion } from "motion/react";
 
 type Project = {
@@ -45,6 +46,19 @@ const projects: Project[] = [
     image: barber,
     imageAlt: "Barber shop portfolio picture",
     accent: "from-violet-500/25 via-fuchsia-500/10 to-transparent",
+  },
+  {
+    number: "3",
+    title: "Aura Apartments",
+    description:
+      "A welcoming online presence that showcases the apartments, highlights their amenities, and helps guests plan their stay.",
+    result:
+      "A clearer view of the accommodation and an easier path from browsing to booking.",
+    tags: ["Next.js", "Tailwind CSS", "Figma", "Framer Motion"],
+    href: "https://apartment-aura.vercel.app/",
+    image: aura,
+    imageAlt: "Aura Apartments website preview",
+    accent: "from-sky-500/25 via-cyan-500/10 to-transparent",
   },
 ];
 
